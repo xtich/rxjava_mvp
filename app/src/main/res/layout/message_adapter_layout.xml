@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="13dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/message_iv"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/bt_size">
+
+        <TextView
+            android:id="@+id/message_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="6dp"
+            android:text="2016-10-22"
+            android:textColor="@color/tv_list_content_color" />
+
+        <TextView
+            android:id="@+id/message_tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/message_tv_time"
+            android:layout_marginTop="6dp"
+
+            android:textColor="@color/tv_list_content_color" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/rl_1"
+        android:layout_toRightOf="@+id/rl_1"
+        android:layout_weight="5"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/message_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:textColor="@color/tv_list_title_color"
+            android:textSize="@dimen/tv_title_size" />
+
+        <TextView
+            android:id="@+id/message_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/message_tv_title"
+            android:gravity="center"
+            android:text="1111"
+            android:textColor="@color/tv_list_content_color" />
+
+    </RelativeLayout>
+</RelativeLayout>
